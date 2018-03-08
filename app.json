@@ -1,0 +1,8 @@
+{
+  "name": "Node.js Salesforce Lightning Out Heroku App",
+  "description": "A barebones Node.js app using Express 4 for Salesforce Lightning Out",
+  "repository": "https://github.com/tiaanswart/lighnting-out-heroku",
+  "logo": "https://cdn.rawgit.com/tiaanswart/lighnting-out-heroku/master/public/node.svg",
+  "keywords": ["node", "express", "heroku", "lightning-out"],
+  "image": "heroku/nodejs"
+}
