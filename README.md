@@ -10,7 +10,7 @@ Checkout the Salesforce repo: [SF Lightning Out](https://github.com/tiaanswart/s
 
 1. Make sure you follow the Post Deployment steps from [SF Lightning Out](https://github.com/tiaanswart/sf-lightning-out)
 2. Use the Community URL you copied and replace the Community URL in: `views/partials/header.ejs`
-3. Replace the Lightning URL with you My Domain Lightning URL `views/partials/lightning-out.ejs`
+3. Replace the Community URL with you Community URL `views/partials/lightning-out.ejs`
 
 ## Post-deployment steps
 
