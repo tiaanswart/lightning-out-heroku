@@ -12,12 +12,12 @@
   },
   "dependencies": {
     "ejs": "^3.0.2",
-    "express": "^4.15.2",
+    "express": "^4.17.1",
     "cors": "*"
   },
   "devDependencies": {
     "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "tape": "^4.13.2"
   },
   "repository": {
     "type": "git",
