@@ -16,7 +16,7 @@
     "cors": "*"
   },
   "devDependencies": {
-    "request": "^2.81.0",
+    "request": "^2.88.2",
     "tape": "^4.13.2"
   },
   "repository": {
