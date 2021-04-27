@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <% include ../partials/header.ejs %>
-    </head>
-    <body>
-
-        <!-- Lightning DOM Tag -->
-        <div id="lightningLocator" class="lightningLocator"></div>
-
-        <% include ../partials/lightning-out.ejs %>
-    </body>
+  <head>
+    <title>Salesforce Lighnting Out on Heroku</title>
+  </head>
+  <body>
+    <!-- Lightning DOM Tag -->
+    <div id="lightningLocator"></div>
+    <!-- Lightning Out -->
+    <script src="<%= sfLightningOutScript %>"></script>
+    <script>
+      $Lightning.use(
+        // Name of the Lightning app
+        'c:lightningOutAppGuest',
+        () => {
+          // Callback once framework and app loaded
+          $Lightning.createComponent(
+            // Top-level component of your app
+            'c:lightningOutCmp',
+            // Attributes to set on the component when created
+            {},
+            // The DOM location to insert the component
+            'lightningLocator',
+            (cmp) => {
+              // Callback when component is created and active on the page
+              alert('Lightning Out App has loaded!');
+            }
+          );
+        },
+        // Community endpoint
+        '<%= sfDomain %>'
+      );
+    </script>
+  </body>
 </html>
